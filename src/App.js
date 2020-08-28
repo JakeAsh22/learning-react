@@ -12,19 +12,11 @@ import {
 function App() {
   return (
    <div>
+    <Router>
      <Header />
      
      <HelloWorld name="Lottie"/>
 
-    <Router>
-      <ul>
-        <li>
-          <Link to="/" className="text-blue-500 ">Home</Link>
-        </li>
-        <li>
-          <Link to="/about" className="text-blue-500 ">About</Link>
-        </li>
-      </ul>
       <Switch>
         <Route exact path="/">
           <h1 className="font-bold text-2xl">This is the homepage</h1>
